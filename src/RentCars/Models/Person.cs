@@ -8,6 +8,8 @@ public abstract class Person
     public string? Address { get; set; }
     public string? Contact { get; set; }
 
+    public abstract double CalculatePrice(double pricePerDay, int daysRented);
+
     public virtual string SendEmail()
     {
         return $"Sendind email to {this.Email}.";
